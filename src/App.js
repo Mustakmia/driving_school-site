@@ -1,13 +1,13 @@
-import { NotFound } from 'http-errors';
+import NotFound from './component/NotFound/NotFound'
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
 import About from './component/About/About';
-import Friends from './component/Friends/Friends';
+import Footer from './component/Footer/Footer';
 import Header from './component/Header/Header';
 import Home from './component/Home/Home';
-
-
-
+import Services from './component/Services/Services';
+import Bannar from './component/Bannar/Bannar';
+import More from './component/More/More';
 
 
 function App() {
@@ -16,22 +16,26 @@ function App() {
       <BrowserRouter>
         <Header></Header>
         <Switch>
-          <Route path="/">
+          <Route exact path="/">
             <Home></Home>
           </Route>
           <Route path="/home">
             <Home></Home>
           </Route>
+          <Route path="/services">
+            <Services></Services>
+          </Route>
+          <Route path="/more">
+            <More></More>
+          </Route>
           <Route path="/about">
             <About></About>
-          </Route>
-          <Route path="/friends">
-            <Friends></Friends>
           </Route>
           <Route path="*">
             <NotFound></NotFound>
           </Route>
         </Switch>
+        <Footer></Footer>
       </BrowserRouter>
 
     </div>

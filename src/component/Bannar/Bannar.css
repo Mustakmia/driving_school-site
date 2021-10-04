@@ -1,0 +1,22 @@
+.banner {
+  background-image: url(""),
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  height: 780px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; 
+  width: 100%;
+}
+.title {
+  color: white;
+  font-weight: bold;
+  font-size: 59px;
+}
+.about-btn {
+  background-color: #ff0505;
+  outline: none;
+  border: none;
+  padding: 17px 34px;
+  color: white;
+}
