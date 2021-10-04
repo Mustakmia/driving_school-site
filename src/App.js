@@ -8,6 +8,7 @@ import Home from './component/Home/Home';
 import Services from './component/Services/Services';
 import Bannar from './component/Bannar/Bannar';
 import More from './component/More/More';
+import Moredetails from './component/Moredetails/Moredetails';
 
 
 function App() {
@@ -26,7 +27,7 @@ function App() {
             <Services></Services>
           </Route>
           <Route path="/more">
-            <More></More>
+            <Moredetails></Moredetails>
           </Route>
           <Route path="/about">
             <About></About>

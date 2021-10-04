@@ -1,10 +1,10 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
-
 const More = (props) => {
     const { img, item, fee, time, description } = props.service
     return (
         <div>
+
             {
                 <Card style={{ margin: '3px' }}>
                     <Card.Img style={{ height: '10rem' }} variant="top" src={img} />
