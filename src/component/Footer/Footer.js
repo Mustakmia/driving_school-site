@@ -9,16 +9,17 @@ const Footer = () => {
                         <input type="text" className="px-3" placeholder="Enter Your Email" />
                         <button className="btn2">Submit</button>
                     </div>
+
                 </div>
                 <div className="row">
                     <div className="col-lg-11">
 
                     </div>
                 </div>
-
-
-
-                <div> <p className="text-center mt-5 text-light">coptright $ 2021 all rights reserved|This templete made by Driving Association.</p></div>
+                <div>
+                    <p className="text-center mt-5 text-light">coptright $ 2021 all rights reserved|This templete made by Driving Association.
+                    </p>
+                </div>
             </div>
         </section >
     );

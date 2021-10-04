@@ -11,20 +11,17 @@ const HomeCart = (props) => {
     return (
 
         <div>
-
-
-            <Col>
+            <Col className="">
                 <Card style={{ margin: '3px' }}>
                     <Card.Img style={{ height: '10rem' }} variant="top" src={img} />
-                    <Card.Body >
-                        <Card.Title>{item}</Card.Title>
-                        <Card.Text>Course Time: {time}</Card.Text>
-                        <Card.Text>Course Fee:{fee} Taka</Card.Text>
+                    <Card.Body className="bg-dark" >
+                        <Card.Title className="text-info">{item}       Riding</Card.Title>
+                        <Card.Text className="text-info">Course Time: {time}</Card.Text>
+                        <Card.Text className="text-info">Course Fee:{fee} Taka</Card.Text>
                         <button onClick={details} className=" btn-warning">Details</button>
                     </Card.Body>
                 </Card>
             </Col>
-
         </div>
     )
 }

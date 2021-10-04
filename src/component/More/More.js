@@ -8,11 +8,11 @@ const More = (props) => {
             {
                 <Card style={{ margin: '3px' }}>
                     <Card.Img style={{ height: '10rem' }} variant="top" src={img} />
-                    <Card.Body>
-                        <Card.Title>{item}</Card.Title>
-                        <Card.Text>Course Time: {time}</Card.Text>
-                        <Card.Text>Course Fee:{fee} Taka</Card.Text>
-                        <Card.Text>Course details:{description} Taka</Card.Text>
+                    <Card.Body className="bg-dark">
+                        <Card.Title className="text-info">{item} Driving</Card.Title>
+                        <Card.Text className="text-warning">Course Time: {time}</Card.Text>
+                        <Card.Text className="text-light">Course Fee:{fee} Taka</Card.Text>
+                        <Card.Text className="text-primary"> <span className="text-light">Course details :</span>{description} Taka</Card.Text>
                     </Card.Body>
                 </Card>
             }
